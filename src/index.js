@@ -2,25 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-// class Square extends React.Component {
-//   // constructor(props) { - no longer needed because square just inherits props from Board
-//   //   super(props);
-//   //   this.state = {
-//   //     value: null,
-//   //   };
-//   // }
-//
-//
-//   return (
-//     // <button className="square" onClick={() => this.props.onClick({value: 'X'})}>
-//     //   {this.props.value}
-//     // </button>
-//     <button className="square" onClick={props.onClick}>
-//       {props.value}
-//     </button>
-//   );
-// }
-
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -28,7 +9,6 @@ function Square(props) {
     </button>
   );
 }
-
 
 class Board extends React.Component {
   constructor(props) {
@@ -127,7 +107,6 @@ function calculateWinner(squares) {
   }
   return null;
 }
-
 
 // ========================================
 
